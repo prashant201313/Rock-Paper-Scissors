@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="score-board">
+            <div id="gamename">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+
+            <div id="scores">
+                <div class="boxes">
+                    <p class="users">COMPUTER SCORE</p>
+                    <p id="pcscore" class="points"></p>
+                </div>
+
+                <div class="boxes">
+                    <p style="width: 5rem;" class="users">YOUR SCORE</p>
+                    <p id="userscore" class="points"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game">
+            <div class="rock-scissor">
+                <button id="rock" class="circles" data-choice="rock">
+                    <img src="image/rockcircle.png" class="background-image" alt="">
+                    <img src="image/rock.png" class="logo rock" alt="">
+                </button>
+                <button id="scissor" class="circles" data-choice="scissor">
+                    <img src="image/scissorcircle.png" class="background-image" alt="">
+                    <img src="image/scissor.png" class="logo scissor" alt="">
+                </button>
+            </div>
+
+            <div id="paper">
+                <button class="circles" data-choice="paper">
+                    <img src="image/papercircle.png" class="background-image" alt="">
+                    <img src="image/paper.png" class="logo paper" alt="">
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <section class="results hidden">
+        <h5 class="chosen">YOU PICKED</h5>
+        <h5 class="chosen">PC PICKED</h5>
+        <div class="result"></div>
+        <div class="winner hidden">
+            <h3 class="text"></h3>
+            <h2 class="against">AGAINST PC</h2>
+            <button class="play">PLAY AGAIN</button>
+        </div>
+        <div class="result"></div>
+    </section>
+
+    <button class="next-btn btn hidden"><a href="celebration.html">NEXT</a></button>
+    <button class="rules-btn btn">RULES</button>
+    <div class="game-rules hidden">
+        <div class="close-btn">
+            <img src="image/xcircle.png" alt="">
+            <img src="image/X.png" class="X" alt="">
+        </div>
+
+        <div class="rules">
+            <h2>Game Rules</h2>
+            <ul type="square">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
